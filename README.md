@@ -109,3 +109,90 @@ sudo certbot --nginx -d yourdomain.com -d www.yourdomain.com
 # Only valid for 90 days, test the renewal process with
 certbot renew --dry-run
 ```
+Video Tutorial: https://youtu.be/Qmld1te08Ns
+
+## Nginx Ubuntu Installation
+
+Update Packages
+```sh
+sudo apt-get update
+```
+
+Install Nginx
+```sh
+sudo apt-get install nginx
+```
+
+Verify Installation
+```sh
+sudo nginx -v
+```
+Start Nginx Server
+```sh
+nginx
+```
+
+Now visit `http://localhost:80` and you would be able to see default nginx welcome page.
+
+## Nginx Docker Installation
+
+Run Docker Ubuntu Image
+```sh
+docker run -it -p 8080:80 ubuntu
+```
+
+Update Packages
+```sh
+sudo apt-get update
+```
+
+Install Nginx
+```sh
+sudo apt-get install nginx
+```
+
+Verify Installation
+```sh
+sudo nginx -v
+```
+Start Nginx Server
+```sh
+nginx
+```
+Now visit `http://localhost:8080` and you would be able to see default nginx welcome page.
+
+## Nginx Conf File
+
+Install VIM
+```sh
+sudo apt-get install vim
+```
+
+Open `nginx.conf` file
+```sh
+vim etc/nginx/nginx.conf
+```
+
+Type Sample Nginx Conf
+```
+events {
+}
+
+http {
+  server {
+    listen 80;
+    server_name _;
+    
+    location / {
+      return 200 "Hello from Nginx Sever";
+    }
+  }
+}
+```
+
+Reload Nginx
+```
+nginx -s reload
+```
+
+Visit `localhost:8080` or `localhost:80` and you should see Hello from Nginx Sever on browser.
