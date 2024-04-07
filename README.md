@@ -43,6 +43,16 @@ curl -fsSL https://deb.nodesource.com/setup_lts.x | sudo -E bash -
 sudo apt install nodejs
 
 node --version
+
+
+
+or
+1
+ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
+2
+source ~/.bashrc
+3
+nvm install --lts
 ```
 
 ## 4. Clone your project from Github
