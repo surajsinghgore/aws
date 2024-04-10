@@ -1165,3 +1165,44 @@ server {
 #}
 
 ```
+
+## HOST NODEJS AND REACT ON SAME SERVER
+1.Go Inside React Client and build the project
+```
+cd <reac-project>
+```
+```
+npm run build
+```
+
+2.Go Back to backend and start the server
+```
+cd ..
+```
+nodejs/index.js
+```
+npm i cors;
+```
+
+```
+const cors = require("cors");
+const path=require('path');
+```
+```
+const buildpath=path.join(__dirname,"../client/build");
+app.use(express.static(buildpath));
+
+app.use(cors({"origin":"*"}));
+```
+```
+node index.js
+```
+## Connect Domain or Sub Domain With VPS HOSITING
+
+
+![App Screenshot](https://res.cloudinary.com/dnxv21hr0/image/upload/v1712718795/aws/ypytlmscoquilekx14wb.png)
+
+OR 
+
+![App Screenshot](https://res.cloudinary.com/dnxv21hr0/image/upload/v1712718794/aws/zdxcyleu2vfgxkomh3zo.png)
+
