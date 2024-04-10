@@ -1198,8 +1198,18 @@ app.use(cors({"origin":"*"}));
 node index.js
 ```
 ## Connect Domain or Sub Domain With VPS HOSITING
+**CONNECT DOMAINS**
+
+1.ADD A RECORD
+![App Screenshot](https://res.cloudinary.com/dnxv21hr0/image/upload/v1712720046/aws/udbfaa8bjroor0lcnkwo.png)
+![App Screenshot](https://res.cloudinary.com/dnxv21hr0/image/upload/v1712720031/aws/cpfe76ixo6vxe2alxudf.png)
 
 
+2.ADD CNAME RECORD
+![App Screenshot](https://res.cloudinary.com/dnxv21hr0/image/upload/v1712720047/aws/uuoionmjexhdvd4aihzt.png)
+![App Screenshot](https://res.cloudinary.com/dnxv21hr0/image/upload/v1712720047/aws/ptddpphfcp1oljlxvoiq.png)
+
+**CREATE AND CONNECT SUB DOMAINS FROM SINGLE DOMAIN**
 ![App Screenshot](https://res.cloudinary.com/dnxv21hr0/image/upload/v1712718795/aws/ypytlmscoquilekx14wb.png)
 
 OR 
