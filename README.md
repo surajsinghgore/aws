@@ -1216,3 +1216,22 @@ OR
 
 ![App Screenshot](https://res.cloudinary.com/dnxv21hr0/image/upload/v1712718794/aws/zdxcyleu2vfgxkomh3zo.png)
 
+
+## DEPLOY REACT AND NODE APP ON SINGLE repository
+```
+"scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js",
+    "build": "cd client && npm install && npm run build"
+  },
+```
+
+nodejs file static serve react app
+```
+const path=require('path');
+
+const buildPath = path.join(__dirname, 'client/build');
+app.use(express.static(buildPath));
+
+//before any / request
+```
