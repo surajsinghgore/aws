@@ -1033,7 +1033,7 @@ sudo npm i pm2 -g
 ```
 10.Now Serve Build File of Nextjs App 
 ```
-sudo pm2 start npm --name "NextjsApp" --start
+sudo pm2 start npm --name "NextjsApp" -- start
 ```
  or step 10 is replace with following steps:-
 
